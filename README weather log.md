@@ -8,3 +8,4 @@ WEATHER LOG
 1/17/2021 28 degrees and hazy.  I tried to get Maya yesterday so I could start practicing with it, but I accidentally used my prefered name instead of my legal name.  They want me to prove my identity with documents that don't exist so...I'm gonna hope the library has Maya so that I can at least try it out while this gets worked out.  Sigh.
 1/18/2021 late check in. 36 degrees and partly cloudy.  My head hurts.
 1/19/2021 about 28 degrees but super windy so it felt colder.
+1/20/2021 34 degrees and sunny
