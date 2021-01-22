@@ -10,3 +10,4 @@ WEATHER LOG
 1/19/2021 about 28 degrees but super windy so it felt colder.
 1/20/2021 34 degrees and sunny
 1/21/2021 30 degrees and sunny
+1/22/2021 39 degrees and cloudy.   Moving today.  Why did all life events converge on this week?
