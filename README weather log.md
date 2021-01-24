@@ -12,3 +12,4 @@ WEATHER LOG
 1/21/2021 30 degrees and sunny
 1/22/2021 39 degrees and cloudy.   Moving today.  Why did all life events converge on this week?
 1/23/2021 35 and cloudy.  more moving complications.  Blegh.
+1/24/2021 29 degrees and mostly cloudy.
