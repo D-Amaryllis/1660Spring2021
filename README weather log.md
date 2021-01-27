@@ -15,3 +15,4 @@ WEATHER LOG
 1/24/2021 29 degrees and mostly cloudy.
 1/25/2021 28 degrees and mostly cloudy
 1/26/2021 29 degrees and SNOWING!
+1/27/2021 27 degrees and cloudy.
