@@ -18,3 +18,4 @@ WEATHER LOG
 1/27/2021 27 degrees and cloudy.
 1/28/2021 46 degrees and cloudy. Very late check in.  What an insane day.
 1/29/2021 44 degrees mostly cloudy.  My body hurts so badly.  crying face.
+1/31/2021 28 degrees, clear skies.
