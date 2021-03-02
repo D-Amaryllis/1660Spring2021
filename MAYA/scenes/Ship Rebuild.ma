@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Ship Rebuild.ma
-//Last modified: Tue, Mar 02, 2021 10:34:42 AM
+//Last modified: Tue, Mar 02, 2021 10:39:34 AM
 //Codeset: 932
 requires maya "2020";
 currentUnit -l centimeter -a degree -t film;
@@ -9,12 +9,12 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19041)\n";
-fileInfo "UUID" "4263407A-4346-7F99-62A1-389A72CB95F0";
+fileInfo "UUID" "365B1386-4DCE-DD6C-DC71-909C36083B4F";
 createNode transform -s -n "persp";
 	rename -uid "4B2A4DE2-48EC-C56F-A4C7-D49683597DDA";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.186986495532933 5.0470413495166611 37.602360724011064 ;
-	setAttr ".r" -type "double3" 3.2616472541248678 1.3999999999925277 3.106937883824256e-17 ;
+	setAttr ".t" -type "double3" 8.3955730117767473 23.666947313047498 -31.680218065177968 ;
+	setAttr ".r" -type "double3" -26.138352745876102 521.79999999997153 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "ACE5C56E-46AB-AF1E-8919-2AB47326FC01";
 	setAttr -k off ".v" no;
