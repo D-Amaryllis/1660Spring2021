@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: iphone in case.ma
-//Last modified: Wed, Mar 17, 2021 12:42:50 PM
+//Last modified: Fri, Mar 19, 2021 07:51:02 PM
 //Codeset: 932
 requires maya "2020";
 currentUnit -l centimeter -a degree -t film;
@@ -9,17 +9,17 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19041)\n";
-fileInfo "UUID" "6887D504-4B02-38C3-605D-82A73332C81B";
+fileInfo "UUID" "C920C880-4EE5-34F5-C4EA-D3890015F5D3";
 createNode transform -s -n "persp";
 	rename -uid "63542C1F-407C-73CE-99CB-6B84A54455E7";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.075214588855681191 44.716024033782958 -3.0775862905581453 ;
-	setAttr ".r" -type "double3" -93.93835272959835 1.3999999999988191 1.9884402456475298e-16 ;
+	setAttr ".t" -type "double3" -0.018579494037453514 38.165659475818316 1.7741461343793574 ;
+	setAttr ".r" -type "double3" -87.338352729567163 -0.60000000001270559 4.3735024889287483e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "05EFEF59-4C22-92B3-B8AA-6485B1FC7A92";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 44.82186966202994;
+	setAttr ".coi" 38.206877691438251;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -74,32 +74,32 @@ createNode camera -s -n "sideShape" -p "side";
 createNode transform -n "pCube1";
 	rename -uid "3364FFA3-4B40-493E-B3A1-729E691C2459";
 	setAttr ".t" -type "double3" 0 1.0962095510535286 0 ;
-	setAttr ".s" -type "double3" 8.9868941814376502 1.1874834941361911 17.410547703150332 ;
+	setAttr ".s" -type "double3" 8.9868941814376502 1.7793710377512351 17.410547703150332 ;
 createNode mesh -n "pCubeShape1" -p "pCube1";
 	rename -uid "9FD2CEDE-43BB-9E07-EA7E-1689DE2EF99C";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.375 ;
+	setAttr ".pv" -type "double2" 0.50000001490116119 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "2F7BFFAC-4960-1F5B-435A-4D965DCB9665";
+	rename -uid "B3A81B27-45D6-E6C8-14C0-5480B3BCCB53";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "DD2E01A0-4B36-110A-6D4E-2582D6D6754B";
+	rename -uid "22E8588D-4450-2485-55CE-768018109C82";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "3DBB56A6-457E-0CF9-65C3-D7800DC94E15";
+	rename -uid "96398593-40C8-9F7A-15FB-1FAABA19D07F";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "6F02EEF9-4687-1279-F40D-B7AEBEB29DCC";
+	rename -uid "6ADE11B5-4168-28CE-9F64-1E843E122FC1";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "D78C4FC1-40B4-08DB-27EE-01920A598FFF";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "A0E96416-4BC3-5B0D-B822-5E82AD5A95A5";
+	rename -uid "A81603F1-48F6-BD6A-7F76-1AACC9C9888A";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "EB1561F0-4C26-87D2-888B-B79CC06214A3";
 	setAttr ".g" yes;
@@ -153,6 +153,58 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "29939149-442E-2818-B573-9E94AAB7DA0B";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode polyBevel3 -n "polyBevel1";
+	rename -uid "251177B5-430B-C03A-2258-468A8904B054";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 3 "e[0:3]" "e[6:7]" "e[10:11]";
+	setAttr ".ix" -type "matrix" 8.9868941814376502 0 0 0 0 1.1874834941361911 0 0 0 0 17.410547703150332 0
+		 0 1.0962095510535286 0 1;
+	setAttr ".ws" yes;
+	setAttr ".oaf" yes;
+	setAttr ".at" 180;
+	setAttr ".sn" yes;
+	setAttr ".mv" yes;
+	setAttr ".mvt" 0.0001;
+	setAttr ".sa" 30;
+createNode polyExtrudeFace -n "polyExtrudeFace1";
+	rename -uid "EDB1076C-4362-2C14-A75C-52A29B5C0C46";
+	setAttr ".ics" -type "componentList" 1 "f[9]";
+	setAttr ".ix" -type "matrix" 8.9868941814376502 0 0 0 0 1.7793710377512351 0 0 0 0 17.410547703150332 0
+		 0 1.0962095510535286 0 1;
+	setAttr ".ws" yes;
+	setAttr ".pvt" -type "float3" 0 1.6703031 0 ;
+	setAttr ".rs" 64208;
+	setAttr ".c[0]"  0 1 1;
+	setAttr ".cbn" -type "double3" -4.3403134996152097 1.6703031213310413 -8.6477851230289478 ;
+	setAttr ".cbx" -type "double3" 4.3403134996152097 1.6703031213310413 8.6477851230289478 ;
+createNode polyTweak -n "polyTweak1";
+	rename -uid "C895C8F6-49CC-442A-FB5E-5D80F254772C";
+	setAttr ".uopa" yes;
+	setAttr -s 16 ".tk[0:15]" -type "float3"  -0.015990756 0.17736144 0.013747559
+		 0 2.3841858e-07 0 0 2.3841858e-07 0 0.015990756 0.17736144 0.013747559 0 4.7683716e-07
+		 0 -0.015990756 -0.17736146 0.013747559 0.015990756 -0.17736146 0.013747559 0 4.7683716e-07
+		 0 -0.015990756 -0.17736146 -0.013747559 0 4.7683716e-07 0 0.015990756 -0.17736146
+		 -0.013747559 0 4.7683716e-07 0 0 2.3841858e-07 0 -0.015990756 0.17736144 -0.013747559
+		 0.015990756 0.17736144 -0.013747559 0 2.3841858e-07 0;
+createNode polyExtrudeFace -n "polyExtrudeFace2";
+	rename -uid "971F8FF7-4C2C-0115-6406-6FAFF6995C1C";
+	setAttr ".ics" -type "componentList" 1 "f[9]";
+	setAttr ".ix" -type "matrix" 8.9868941814376502 0 0 0 0 1.7793710377512351 0 0 0 0 17.410547703150332 0
+		 0 1.0962095510535286 0 1;
+	setAttr ".ws" yes;
+	setAttr ".pvt" -type "float3" 0 1.7468954 0 ;
+	setAttr ".rs" 53867;
+	setAttr ".lt" -type "double3" 0 0 -0.20602166692541513 ;
+	setAttr ".off" 0.05000000074505806;
+	setAttr ".c[0]"  0 1 1;
+	setAttr ".cbn" -type "double3" -4.0421763067005276 1.7468954834346091 -8.3572598831243745 ;
+	setAttr ".cbx" -type "double3" 4.0421763067005276 1.7468954834346091 8.3572598831243745 ;
+createNode polyTweak -n "polyTweak2";
+	rename -uid "F42FE8C0-46FA-57D7-F890-589EA77967F5";
+	setAttr ".uopa" yes;
+	setAttr -s 4 ".tk[16:19]" -type "float3"  -0.033174716 0.043044604 -0.016686749
+		 0.033174716 0.043044604 -0.016686749 -0.033174716 0.043044604 0.016686749 0.033174716
+		 0.043044604 0.016686749;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -182,13 +234,23 @@ select -ne :defaultResolution;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-connectAttr "polyCube1.out" "pCubeShape1.i";
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
+connectAttr "polyExtrudeFace2.out" "pCubeShape1.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
+connectAttr "polyCube1.out" "polyBevel1.ip";
+connectAttr "pCubeShape1.wm" "polyBevel1.mp";
+connectAttr "polyTweak1.out" "polyExtrudeFace1.ip";
+connectAttr "pCubeShape1.wm" "polyExtrudeFace1.mp";
+connectAttr "polyBevel1.out" "polyTweak1.ip";
+connectAttr "polyTweak2.out" "polyExtrudeFace2.ip";
+connectAttr "pCubeShape1.wm" "polyExtrudeFace2.mp";
+connectAttr "polyExtrudeFace1.out" "polyTweak2.ip";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 // End of iphone in case.ma
