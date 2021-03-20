@@ -56,3 +56,4 @@ WEATHER LOG
 3/16/2021 48 degrees partly cloudy.
 3/18/2021 46 degrees partly cloudy.
 3/19/2021 63 degrees and sunny.
+3/20/2021 44 degrees and drizzling.
