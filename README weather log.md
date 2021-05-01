@@ -84,3 +84,4 @@ WEATHER LOG
 4/27/2021 52 degrees and partly cloudy.
 4/28/2021 50 degrees and partly cloudy.
 4/30/2021 70 degrees and clear.
+5/01/2021 77 degrees and sunny.
