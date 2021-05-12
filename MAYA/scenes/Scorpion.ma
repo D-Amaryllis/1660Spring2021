@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Scorpion.ma
-//Last modified: Wed, May 12, 2021 12:44:25 PM
+//Last modified: Wed, May 12, 2021 12:48:08 PM
 //Codeset: 932
 requires maya "2020";
 currentUnit -l centimeter -a degree -t film;
@@ -9,12 +9,12 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19041)\n";
-fileInfo "UUID" "AA2BD756-4DE3-E8D2-E9D3-0C8BCC9BAB95";
+fileInfo "UUID" "11C6F8D0-48CC-A224-D473-88829E609174";
 createNode transform -s -n "persp";
 	rename -uid "83784084-4D4A-8062-B0AC-089EC142F5A1";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 47.060739563552382 8.5169867302676092 46.460174159965035 ;
-	setAttr ".r" -type "double3" -8.138352729617802 44.200000000005076 2.2182365887201487e-15 ;
+	setAttr ".t" -type "double3" 28.169965594075521 39.310581560476436 45.983793455174578 ;
+	setAttr ".r" -type "double3" -34.538352729618389 31.400000000006337 1.8631314572117902e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3F60E87A-493B-C71E-E228-18A17EE2E1D2";
 	setAttr -k off ".v" no;
@@ -105,12 +105,11 @@ createNode imagePlane -n "pasted__imagePlaneShape1" -p "pasted__imagePlane1";
 	setAttr ".h" 7.57;
 	setAttr ".cs" -type "string" "sRGB";
 createNode transform -n "pCube1";
-	rename -uid "C839C635-447C-8490-9DF5-5EB1DB3C885A";
-	setAttr ".t" -type "double3" 0 7.8652975522598805 0 ;
-	setAttr ".r" -type "double3" 0 0 45.873644078523704 ;
-	setAttr ".s" -type "double3" 2.3016377118235347 2.3016377118235347 3.0075377449357705 ;
+	rename -uid "5C529C0F-4C82-E879-E9F4-828BACBA2653";
+	setAttr ".t" -type "double3" 0 5.17765104335842 0 ;
+	setAttr ".s" -type "double3" 2.4462260585184552 2.4462260585184552 2.3938745134689361 ;
 createNode mesh -n "pCubeShape1" -p "pCube1";
-	rename -uid "657C9AD2-4B04-0483-0EE3-17B07D525464";
+	rename -uid "C80D802E-4EA1-265C-4B06-D58D094FE286";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -189,7 +188,10 @@ createNode displayLayer -n "layer1";
 	rename -uid "08805442-4A46-223C-C403-7799E33A8CFC";
 	setAttr ".do" 1;
 createNode polyCube -n "polyCube1";
-	rename -uid "34BE98B9-4A6D-885E-446A-8B8BD9E5045C";
+	rename -uid "0EC92418-4B34-547B-5C47-A5A347785A00";
+	setAttr ".sw" 4;
+	setAttr ".sh" 4;
+	setAttr ".sd" 4;
 	setAttr ".cuv" 4;
 select -ne :time1;
 	setAttr ".o" 1;
